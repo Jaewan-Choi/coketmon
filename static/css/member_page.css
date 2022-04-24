@@ -1,0 +1,249 @@
+.Topbar {
+    height: 75px;
+    padding: 1rem;
+    color: white;
+    background: #aea2829c;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.quick_menu {
+    height: 50px;
+    text-align: center;
+}
+
+.Nav {
+    font-family: 'Hi Melody', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+@media (max-width: 840px) {
+    .Nav {
+        display: none;
+    }
+}
+
+.body {
+    padding-top: 75px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.intro_background {
+    background-color: darkslateblue;
+}
+
+.intro {
+    max-width: 1600px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro_textbox {
+    font-family: 'NanumPen';
+    max-width: 700px;
+    width: 100%;
+    padding: 10px;
+}
+
+.sentence {
+    font-family: 'NanumPen';
+    height: 400px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#sentence2 {
+    display: none;
+}
+
+#sentence3 {
+    display: none;
+}
+
+button {
+    background: 0;
+    border: 0;
+    padding: 0;
+    cursor: pointer
+}
+
+button:focus {
+    outline: 0
+}
+
+.ico_arrow_left {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-indent: -9999px;
+}
+
+.ico_arrow_left:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.ico_arrow_left:after {
+    content: '';
+    width: 42px;
+    height: 2px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000
+}
+
+.ico_arrow_left:hover {
+    transform: translateX(-10px)
+}
+
+.ico_arrow:hover {
+    transform: translateX(10px);
+}
+
+.ico_arrow {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-indent: -9999px;
+}
+
+.ico_arrow:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.ico_arrow:after {
+    content: '';
+    width: 42px;
+    height: 2px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000
+}
+
+.Blog .grid-image img {
+    width: calc(33.333% - 10px);
+    margin: 0 15px 15px 0;
+}
+
+.Blog .grid-image img:nth-of-type(3n),
+.Blog .grid-image img:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 640px) {
+    .Blog .grid-image img {
+        width: calc(50% - 15px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Blog .grid-image img:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    .Blog .grid-image img:nth-of-type(3n) {
+        margin-right: 15px;
+    }
+}
+
+.grid-image img {
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.grid-image img:hover {
+    border-radius: 0;
+    transition-duration: 0.35s;
+}
+
+.footer {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: gray;
+    text-align: center;
+    border-top: 1px solid gray;
+    width: 100%;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+.footer_title {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.footer > div {
+    margin: auto;
+}
+
+.footer_memberbox {
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    max-width: 700px;
+    width: 100%;
+}
+
+.footer_memberbox1 {
+    width: 100%;
+}
+
+.footer_memberbox2 {
+    width: 100%;
+}
+
+.project_date {
+    font-size: 20px;
+}
