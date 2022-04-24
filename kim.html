@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    <title>코켓몬</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/member_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Jua&display=swap" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-pen.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/image/pokeball.ico" />
+
+    <style>
+        .intro_img {
+            background-image: url("/static/image/kim.jpeg");
+            background-position: center;
+            background-size: cover;
+            max-width: 400px;
+            height: 595px;
+            width: 100%;
+            border-radius: 300px;
+            margin: auto 10px auto 50px;
+        }
+    </style>
+
+    <script>
+        now_sentence = 1
+        function next_sentence() {
+            if (now_sentence == 1) {
+                now_sentence += 1
+                $('#sentence1').hide()
+                $('#sentence2').fadeIn(800)
+            } else if (now_sentence == 2) {
+                now_sentence += 1
+                $('#sentence2').hide()
+                $('#sentence3').fadeIn(800)
+            } else if (now_sentence == 3) {
+                now_sentence = 1
+                $('#sentence3').hide()
+                $('#sentence1').fadeIn(800)
+            }
+        }
+
+        function previous_sentence() {
+            if (now_sentence == 1) {
+                now_sentence = 3
+                $('#sentence1').hide()
+                $('#sentence3').fadeIn(800)
+            } else if (now_sentence == 3) {
+                now_sentence -= 1
+                $('#sentence3').hide()
+                $('#sentence2').fadeIn(800)
+            } else if (now_sentence == 2) {
+                now_sentence -= 1
+                $('#sentence2').hide()
+                $('#sentence1').fadeIn(800)
+            }
+        }
+    </script>
+</head>
+
+<body class="body">
+<header class="Topbar">
+    <a href="index.html">
+        <h2 class="logo">
+            <img class="icon" alt="img" src="/static/image/pokeball.png">
+            <img class="quick_menu" alt="img" src="/static/image/COKETMON.png">
+        </h2>
+    </a>
+    <nav class="Nav">
+        <img style="height: 30px; width: 30px" alt="img" src="/static/image/pokeball.png">
+        <a href="kim.html">
+            <div style="font-size: 22px">&nbsp;김상윤&nbsp;</div>
+        </a>
+        <a href="yeom.html">
+            <div style="font-size: 22px">&nbsp;염기호&nbsp;</div>
+        </a>
+        <a href="jo.html">
+            <div style="font-size: 22px">&nbsp;조영은&nbsp;</div>
+        </a>
+        <a href="choi.html">
+            <div style="font-size: 22px">&nbsp;최재완&nbsp;</div>
+        </a>
+        <img style="height: 30px; width: 30px" alt="img" src="/static/image/pokeball.png">
+    </nav>
+</header>
+<div>
+    <div class="intro_background">
+        <div class="intro">
+            <div class="intro_textbox">
+                <h2 style="color: hotpink; font-size: 50px">열정을 불태우고 잠자는게 제일좋아<br> 뜨거운 논쟁을 즐기는 변론가, 발명가형 ENTP</h2>
+                <p style="color: pink; font-size: 30px;">
+                    저는 그저 개발자를 경험해보고 싶은 사람입니다.<br>
+                    축구팀은 맨시티를 좋아하고 좋아하는 노래는 가리지 않습니다. <br>
+                    영화나 드라마도 장르를 가리지 않고 다 좋아합니다.
+                </p>
+                <p style="color: pink; font-size: 30px;">
+                    저의 객관적인 장점이라고 한다면 최대한 남을 이해하려고 한다는겁니다.<br>
+                    비록 남눈치를 본다는 단점으로 보일수도 있지만 그만큼 매력적인 장점이라고 생각듭니다. <br>
+                    또한 강박증으로 보일수도 있으나 뭔가를 하나를 팔때는 엄청 열심히 팝니다.
+                </p>
+                <p style="color: pink; font-size: 30px;">
+                    저의 협업 스타일은 팀원들간의 소통입니다.<br>
+                    제 아무리 각자 할일이 바쁘다고 한들 저는 최소한 한두마디는 주고 받아야한다고 생각합니다. <br>
+                    저는 이러한 팀원들간의 소통을 자연스럽게 유도하고 지속하려는 편입니다.
+                </p>
+                <br>
+                <hr style="width:100%; height: 2px; color:pink; text-align: left; size:10px;">
+                <br>
+                <p style="font-size: 25px; color: lightpink;">내배캠 14조, 김상윤</p>
+            </div>
+            <div class="intro_img"></div>
+        </div>
+    </div>
+    <div class="sentence">
+        <button class="ico_arrow_left" type="button" onclick="previous_sentence()">클릭</button>
+        <div id="sentence_box"
+             style="font-size: 40px; font-weight: lighter; color: darkslateblue; text-align: center; width: 70%; ">
+            <span id="sentence1">"주사위는 던져졌다.<br> 갈길이 멀지라도 한 걸음 부터"</span>
+            <span id="sentence2">"성공이란 <br> 열정을 잃지 않고 <br> 실패를 거듭할 수 있는 능력이다." <br>-윈스턴 처칠</span>
+            <span id="sentence3">"성공의 크기는 <br> 열마의 깊이에 좌우된다." <br>– 피터데이비스</span>
+        </div>
+        <button class="ico_arrow" type="button" onclick="next_sentence()">클릭</button>
+    </div>
+    <div style="background-color: #242428; cursor: pointer; text-align: center; padding-top: 30px; padding-bottom: 30px;"
+         class="grid-image">
+        <img onclick="location.href='yeom.html'" style="margin-right: 40px ;" alt="img"
+             src="/static/image/yeom.jpg"/>
+        <img onclick="location.href='jo.html'" style="margin-right: 40px ;" alt="img"
+             src="/static/image/jo.png"/>
+        <img onclick="location.href='choi.html'" alt="img"
+             src="/static/image/choi.jpg"/>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <p class="footer_title">내일배움캠프 AI트랙 2기 14팀 # 코켓몬</p>
+        <div class="footer_memberbox">
+            <div class="footer_memberbox1">
+                <p>김상윤<br>이메일 | gksy03@gmail.com<br>블로그 | https://velog.io/@gksy03</p>
+                <p>염기호<br>이메일 | chocogomting123@gmail.com<br>블로그 | https://velog.io/@macan</p>
+            </div>
+            <div class="footer_memberbox2">
+                <p>조영은<br>이메일 | youngeun.jo1494@gmail.com<br>블로그 | https://velog.io/@youngeunj</p>
+                <p>최재완<br>이메일 | wkdudhksl@naver.com<br>블로그 | https://velog.io/@wkdudhksl</p>
+            </div>
+        </div>
+        <div class="project_date">2022.04</div>
+    </div>
+</footer>
+</body>
+</html>

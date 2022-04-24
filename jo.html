@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    <title>코켓몬</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/member_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Jua&display=swap" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-pen.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/image/pokeball.ico" />
+
+    <style>
+        .intro_img {
+            background-image: url("/static/image/jo.png");
+            background-position: center;
+            background-size: cover;
+            max-width: 400px;
+            height: 595px;
+            width: 100%;
+            border-radius: 300px;
+            margin: auto 10px auto 50px;
+        }
+    </style>
+
+    <script>
+        now_sentence = 1
+
+        function next_sentence() {
+            if (now_sentence == 1) {
+                now_sentence += 1
+                $('#sentence1').hide()
+                $('#sentence2').fadeIn(800)
+            } else if (now_sentence == 2) {
+                now_sentence += 1
+                $('#sentence2').hide()
+                $('#sentence3').fadeIn(800)
+            } else if (now_sentence == 3) {
+                now_sentence = 1
+                $('#sentence3').hide()
+                $('#sentence1').fadeIn(800)
+            }
+        }
+
+        function previous_sentence() {
+            if (now_sentence == 1) {
+                now_sentence = 3
+                $('#sentence1').hide()
+                $('#sentence3').fadeIn(800)
+            } else if (now_sentence == 3) {
+                now_sentence -= 1
+                $('#sentence3').hide()
+                $('#sentence2').fadeIn(800)
+            } else if (now_sentence == 2) {
+                now_sentence -= 1
+                $('#sentence2').hide()
+                $('#sentence1').fadeIn(800)
+            }
+        }
+    </script>
+</head>
+
+<body class="body">
+<header class="Topbar">
+    <a href="index.html">
+        <h2 class="logo">
+            <img class="icon" alt="img" src="/static/image/pokeball.png">
+            <img class="quick_menu" alt="img" src="/static/image/COKETMON.png">
+        </h2>
+    </a>
+    <nav class="Nav">
+        <img style="height: 30px; width: 30px" alt="img" src="/static/image/pokeball.png">
+        <a href="kim.html">
+            <div style="font-size: 22px">&nbsp;김상윤&nbsp;</div>
+        </a>
+        <a href="yeom.html">
+            <div style="font-size: 22px">&nbsp;염기호&nbsp;</div>
+        </a>
+        <a href="jo.html">
+            <div style="font-size: 22px">&nbsp;조영은&nbsp;</div>
+        </a>
+        <a href="choi.html">
+            <div style="font-size: 22px">&nbsp;최재완&nbsp;</div>
+        </a>
+        <img style="height: 30px; width: 30px" alt="img" src="/static/image/pokeball.png">
+    </nav>
+</header>
+<div>
+    <div class="intro_background">
+        <div class="intro">
+            <div class="intro_textbox">
+                <h2 style="color: hotpink; font-size: 50px">어디에서 왔는지 모르겠고,<br> 어디로 갈지 아직 모르겠지만 일단 고</h2>
+                <p style="color: pink; font-size: 30px;">
+                    여행과 자전거타기를 좋아하지만, 아직 자전거 여행은 안 해봤습니다. <br>
+                    더 많은 곳으로 여행을 떠나고 더 큰 세상을 보고 싶어요. <br>
+                    어쩌다보니 프로그래밍 마을로 떠나고 있는 여정에 있습니다.<br>
+                    MBTI는 ISTP! -> 만능 재주꾼이라고 불립니다.
+                </p>
+                <p style="color: pink; font-size: 30px;">
+                    스파르타는 아직 힘겹지만, 스파게티는 잘 먹습니다.<br>
+                    때로는 즉흥적이기도 하지만 진지하게 남의 고민을 듣고 해결하기 위해 함께 고민합니다.
+                </p>
+                <p style="color: pink; font-size: 30px;">
+                    묵묵히 남의 의견을 수용하고, 뒤에서 지지합니다.<br>
+                    사소한 부분을 살피면서 작은 구멍들을 메꾸어나갑니다.
+                </p>
+                <br>
+                <hr style="width:100%; height: 2px; color:pink; text-align: left; size:10px;">
+                <br>
+                <p style="font-size: 25px; color: lightpink;">내배캠 14조, 조영은</p>
+            </div>
+            <div class="intro_img"></div>
+        </div>
+    </div>
+    <div class="sentence">
+        <button class="ico_arrow_left" type="button" onclick="previous_sentence()">클릭</button>
+        <div id="sentence_box"
+           style="font-size: 40px; font-weight: lighter; color: darkslateblue; text-align: center; width: 70%; ">
+            <span id="sentence1">"같은 실수를 두려워하되, 새로운 실수를 두려워하지 마라.<br> 실수는 곧 경험이다."<br> - 도서 (어떤 하루)中</span>
+            <span id="sentence2">"산다는 것 <br> 그것은 치열한 전투이다." <br>-로망로랑</span>
+            <span id="sentence3">"오늘은 당신의 남은 인생 중,<br> 첫 번째 날이다." <br>– 영화 ‘아메리칸 뷰티’ 中</span>
+        </div>
+        <button class="ico_arrow" type="button" onclick="next_sentence()">클릭</button>
+    </div>
+    <div style="background-color: #242428; cursor: pointer; text-align: center; padding-top: 30px; padding-bottom: 30px;"
+         class="grid-image">
+        <img onclick="location.href='kim.html'" style="margin-right: 40px ;" alt="img"
+             src="/static/image/kim.jpeg"/>
+        <img onclick="location.href='yeom.html'" style="margin-right: 40px ;" alt="img"
+             src="/static/image/yeom.jpg"/>
+        <img onclick="location.href='choi.html'" alt="img"
+             src="/static/image/choi.jpg"/>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <p class="footer_title">내일배움캠프 AI트랙 2기 14팀 # 코켓몬</p>
+        <div class="footer_memberbox">
+            <div class="footer_memberbox1">
+                <p>김상윤<br>이메일 | gksy03@gmail.com<br>블로그 | https://velog.io/@gksy03</p>
+                <p>염기호<br>이메일 | chocogomting123@gmail.com<br>블로그 | https://velog.io/@macan</p>
+            </div>
+            <div class="footer_memberbox2">
+                <p>조영은<br>이메일 | youngeun.jo1494@gmail.com<br>블로그 | https://velog.io/@youngeunj</p>
+                <p>최재완<br>이메일 | wkdudhksl@naver.com<br>블로그 | https://velog.io/@wkdudhksl</p>
+            </div>
+        </div>
+        <div class="project_date">2022.04</div>
+    </div>
+</footer>
+</body>
+</html>
